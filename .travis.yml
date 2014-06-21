@@ -13,4 +13,4 @@ script:
   - make package
   - ls
   - ctest 
-  - ls
+  - ls -a
