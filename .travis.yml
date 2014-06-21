@@ -12,5 +12,5 @@ script:
   - ls
   - make package
   - ls
-  - ctestaa –D Experimental 
+  - ctest -D Experimental 
   - ls
