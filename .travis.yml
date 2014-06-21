@@ -4,7 +4,7 @@ compiler:
 before_script:
   - mkdir build
   - cd build
-  - cmake ..
+  - cmake .. -DCMAKE_INSTALL_PREFIX=./myinstall_1
 script: 
   - make help && make && make test 
   - ls
