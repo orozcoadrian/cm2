@@ -7,3 +7,6 @@ before_script:
   - cmake ..
 script: 
   - make help && make && make test 
+  - ls
+  - make install
+  - ls
