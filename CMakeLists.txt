@@ -1,15 +1,19 @@
 cmake_minimum_required (VERSION 2.6)
-project(mp1)
-include(CTest)
+project (Tutorial)
+# The version number.
+set (Tutorial_VERSION_MAJOR 1)
+set (Tutorial_VERSION_MINOR 0)
+ 
+# configure a header file to pass some of the CMake settings
+# to the source code
+configure_file (
+  "${PROJECT_SOURCE_DIR}/TutorialConfig.h.in"
+  "${PROJECT_BINARY_DIR}/TutorialConfig.h"
+  )
+ 
+# add the binary tree to the search path for include files
+# so that we will find TutorialConfig.h
+include_directories("${PROJECT_BINARY_DIR}")
+ 
+# add the executable
 add_executable(Tutorial tutorial.cxx)
-
-install (TARGETS MathFunctions DESTINATION bin)
-
-# does the application run
-add_test (TutorialRuns Tutorial 25)
- 
-# does it sqrt of 25
-add_test (TutorialComp25 Tutorial 25)
- 
-set_tests_properties (TutorialComp25 
-  PROPERTIES PASS_REGULAR_EXPRESSION "25 is 5")
