@@ -33,7 +33,8 @@ install (TARGETS Tutorial DESTINATION bin)
 install (FILES "${PROJECT_BINARY_DIR}/TutorialConfig.h"        
          DESTINATION include)
          
-         
+enable_testing ()
+
 # does the application run
 add_test (TutorialRuns Tutorial 25)
  
