@@ -6,6 +6,4 @@ before_script:
   - cd build
   - cmake ..
 script: 
-  - make && make test 
-  - ./Tutorial -25
-  - ls
+  - make help && make && make test 
