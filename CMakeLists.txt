@@ -47,7 +47,7 @@ set_tests_properties (TutorialComp25
 # does it handle negative numbers
 add_test (TutorialNegative Tutorial -25)
 set_tests_properties (TutorialNegative
-  PROPERTIES PASS_REGULAR_EXPRESSION "-25 is 0")
+  PROPERTIES PASS_REGULAR_EXPRESSION "-25 is -nan")
  
 # does it handle small numbers
 add_test (TutorialSmall Tutorial 0.0001)
