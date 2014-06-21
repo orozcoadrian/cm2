@@ -10,3 +10,5 @@ script:
   - ls
   - make install
   - ls
+  - make package
+  - ls
