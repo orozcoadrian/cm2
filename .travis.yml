@@ -1,5 +1,6 @@
 language: cpp
 script: 
+  - which valgrind
   - mkdir _build_one
   - cd _build_one
   - cmake ../one
