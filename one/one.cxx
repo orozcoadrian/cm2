@@ -29,6 +29,11 @@ int main (int argc, char *argv[])
     for(int& e : arr) 
     {
       e = e*e;
+      std::cout << e << std::endl;
     }
+    
+    enum class Options {None, One, All};
+    Options o = Options::All;
+    std::cout << o << std::endl;
   return 0;
 }
