@@ -1,6 +1,7 @@
 language: cpp
+before_script:
+  - sudo apt-get -qq install valgrind
 script: 
-  - where valgrind
   - mkdir _build_one
   - cd _build_one
   - cmake ../one
