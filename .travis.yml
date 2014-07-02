@@ -4,6 +4,8 @@ script:
   - cd _build_one
   - cmake ../one
   - make help
+  - make
+  - make test
 # compiler:
   # - gcc
 # before_script:
