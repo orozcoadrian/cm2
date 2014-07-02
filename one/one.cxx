@@ -39,7 +39,7 @@ int main (int argc, char *argv[])
     {
         enum class Options {None, One, All};
         Options o = Options::All;
-        std::cout << o << std::endl;
+        // std::cout << o << std::endl;
     }
     
     {
