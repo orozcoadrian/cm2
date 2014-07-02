@@ -8,6 +8,7 @@ script:
   - make test
   - ls
   - ./OneExe
+  - ctest -D Experimental
 # compiler:
   # - gcc
 # before_script:
