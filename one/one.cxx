@@ -106,12 +106,12 @@ int main (int argc, char *argv[])
             {"Beyonce Knowles", "+1 (212) 555-0987"}};
         // Similarly, C++11 supports in-class initialization of data members:
 
-        class C
-        {
-         int a=7; //C++11 only
-        public:
-         C();
-        };
+        // class C
+        // {
+         // int a=7; //C++11 only
+        // public:
+         // C();
+        // };
         }
         
         {
