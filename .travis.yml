@@ -5,7 +5,7 @@ script:
   - which valgrind
   - mkdir _build_one
   - cd _build_one
-  - cmake ../one -DMEMORYCHECK_COMMAND:FILEPATH=/home/kitware/local/bin/valgrind
+  - cmake ../one -DMEMORYCHECK_COMMAND:FILEPATH=/usr/bin/valgrind
   - make help
   - make
   - make test
