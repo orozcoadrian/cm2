@@ -3,4 +3,6 @@ project (One)
 list( APPEND CMAKE_CXX_FLAGS "-std=c++0x ${CMAKE_CXX_FLAGS} -g -ftest-coverage -fprofile-arcs")
 add_executable (OneExe one.cxx)
 
+add_test (RunOneExe OneExe)
+
 include(CTest)
