@@ -101,7 +101,7 @@ int main (int argc, char *argv[])
 
         // C++11 container initializer
         std::vector<std::string> vs={ "first", "second", "third"};
-        std::map singers =
+        std::map<std::string,std::string> singers =
           { {"Lady Gaga", "+1 (212) 555-7890"},
             {"Beyonce Knowles", "+1 (212) 555-0987"}};
         // Similarly, C++11 supports in-class initialization of data members:
