@@ -88,7 +88,7 @@ int main (int argc, char *argv[])
 
         C c {0,0}; //C++11 only. Equivalent to: C c(0,0);
 
-        int* a = new int[3] { 1, 2, 0 }; /C++11 only
+        int* a = new int[3] { 1, 2, 0 }; //C++11 only
 
         class X {
           int a[4];
