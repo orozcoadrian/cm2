@@ -113,6 +113,25 @@ int main (int argc, char *argv[])
          C();
         };
         }
+        
+        {
+        // nullptr
+        // At last, C++ has a keyword that designates a null pointer constant. nullptr replaces the bug-prone NULL macro and the literal 0 that have been used as null pointer substitutes for many years. nullptr is strongly-typed:
+
+        void f(int); //#1
+        void f(char *);//#2
+        //C++03
+        f(0); //which f is called?
+        //C++11
+        f(nullptr) //unambiguous, calls #2
+        // nullptr is applicable to all pointer categories, including function pointers and pointers to members:
+
+        const char *pc=str.c_str(); //data pointers
+        if (pc!=nullptr)
+          cout<<pc<<endl;
+        int (A::*pmf)()=nullptr; //pointer to member function
+        void (*pmf)()=nullptr; //pointer to function
+        }
     }
       
   return 0;
