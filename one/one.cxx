@@ -83,7 +83,7 @@ int main (int argc, char *argv[])
         int a;
         int b;
         public:
-         C(int i, int j);
+         C(int i, int j){}
         };
 
         C c {0,0}; //C++11 only. Equivalent to: C c(0,0);
