@@ -100,8 +100,8 @@ int main (int argc, char *argv[])
         // With respect to containers, you can say goodbye to a long list of push_back() calls. In C++11 you can initialize containers intuitively:
 
         // C++11 container initializer
-        vector<string> vs={ "first", "second", "third"};
-        map singers =
+        std::vector<string> vs={ "first", "second", "third"};
+        std::map singers =
           { {"Lady Gaga", "+1 (212) 555-7890"},
             {"Beyonce Knowles", "+1 (212) 555-0987"}};
         // Similarly, C++11 supports in-class initialization of data members:
