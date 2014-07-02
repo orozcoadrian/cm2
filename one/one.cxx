@@ -54,21 +54,28 @@ int main (int argc, char *argv[])
     }
     
     {
+        {
         std::string s("hello");
         int m=int(); //default initialization
+        }
+        {
         // You can also use the = notation for the same purpose in certain cases:
-
         std::string s="hello";
         int x=5;
+        }
+        {
         // For POD aggregates, you use braces:
-
         int arr[4]={0,1,2,3};
         struct tm today={0};
+        }
+        {
         // Finally, constructors use member initializers:
 
         struct S {
          int x;
          S(): x(0) {} };
+         }
+         {
         // This proliferation is a fertile source for confusion, not only among novices. Worse yet, in C++03 you can’t initialize POD array members and POD arrays allocated using new[]. C++11 cleans up this mess with a uniform brace notation:
 
         class C
@@ -88,6 +95,8 @@ int main (int argc, char *argv[])
         public:
           X() : a{1,2,3,4} {} //C++11, member array initializer
         };
+        }
+        {
         // With respect to containers, you can say goodbye to a long list of push_back() calls. In C++11 you can initialize containers intuitively:
 
         // C++11 container initializer
@@ -103,6 +112,7 @@ int main (int argc, char *argv[])
         public:
          C();
         };
+        }
     }
       
   return 0;
