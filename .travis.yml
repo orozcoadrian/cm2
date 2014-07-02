@@ -3,7 +3,6 @@ before_script:
   - sudo apt-get -qq install valgrind
 script: 
   - which valgrind
-  - which lcov
   - mkdir _build_one
   - cd _build_one
   - cmake ../one -DCMAKE_BUILD_TYPE=Debug -DMEMORYCHECK_COMMAND:FILEPATH=/usr/bin/valgrind
