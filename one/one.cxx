@@ -128,7 +128,7 @@ int main (int argc, char *argv[])
 
         const char *pc=str.c_str(); //data pointers
         if (pc!=nullptr)
-          cout<<pc<<endl;
+          std::cout<<pc<<std::endl;
         int (A::*pmf)()=nullptr; //pointer to member function
         void (*pmf)()=nullptr; //pointer to function
         }
