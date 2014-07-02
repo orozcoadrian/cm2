@@ -6,6 +6,7 @@ script:
   - make help
   - make
   - make test
+  - ./OneExe
 # compiler:
   # - gcc
 # before_script:
