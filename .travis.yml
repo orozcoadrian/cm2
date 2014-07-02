@@ -2,9 +2,10 @@ language: cpp
 before_script:
   - sudo apt-get -qq install valgrind
 script: 
+  - which valgrind
   - mkdir _build_one
   - cd _build_one
-  - cmake ../one
+  - cmake ../one -DMEMORYCHECK_COMMAND:FILEPATH=/home/kitware/local/bin/valgrind
   - make help
   - make
   - make test
