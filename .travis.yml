@@ -11,7 +11,8 @@ script:
   - make test
   - ls
   - ./OneExe
-  - make ExperimentalMemCheck
+  - make Experimental
+  - make ExperimentalMemCheck # why isn't this done by 'Experimental'?
 # compiler:
   # - gcc
 # before_script:
