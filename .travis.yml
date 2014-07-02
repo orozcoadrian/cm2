@@ -11,7 +11,7 @@ script:
   - make test
   - ls
   - ./OneExe
-  - ctest -D Experimental
+  - make Experimental
 # compiler:
   # - gcc
 # before_script:
