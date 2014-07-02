@@ -8,10 +8,10 @@ int main (int argc, char *argv[])
     {
         auto i = 42;  
         std::cout << "hello";
-        std::map<std::string, std::vector<int>> map;
     }
     
     {
+        std::map<std::string, std::vector<int>> map;
         std::vector<int> v;
         v.push_back(1);
         v.push_back(2);
