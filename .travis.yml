@@ -11,7 +11,7 @@ script:
   - make test
   - ls
   - ./OneExe
-  - make Experimental
+  - make ExperimentalMemCheck
 # compiler:
   # - gcc
 # before_script:
