@@ -1,16 +1,21 @@
 language: cpp
-compiler:
-  - gcc
-before_script:
-  - mkdir build
-  - cd build
-  - cmake .. -DCMAKE_INSTALL_PREFIX=./myinstall_1 -DCMAKE_BUILD_TYPE=Debug
 script: 
-  - make help && make && make test 
-  - ls
-  - make install
-  - ls
-  - make package
-  - ls
-  - ctest -D Experimental
-  - ls -al
+  - mkdir _build_one
+  - cd _build_one
+  - cmake ../one
+  - make help
+# compiler:
+  # - gcc
+# before_script:
+  # - mkdir build
+  # - cd build
+  # - cmake .. -DCMAKE_INSTALL_PREFIX=./myinstall_1 -DCMAKE_BUILD_TYPE=Debug
+# script: 
+  # - make help && make && make test 
+  # - ls
+  # - make install
+  # - ls
+  # - make package
+  # - ls
+  # - ctest -D Experimental
+  # - ls -al
