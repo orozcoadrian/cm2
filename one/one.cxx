@@ -126,7 +126,7 @@ int main (int argc, char *argv[])
         f(nullptr) //unambiguous, calls #2
         // nullptr is applicable to all pointer categories, including function pointers and pointers to members:
 
-        
+        std::string str="hi";
         const char *pc=str.c_str(); //data pointers
         if (pc!=nullptr)
           std::cout<<pc<<std::endl;
